@@ -10,7 +10,7 @@
 ################################################################################
 
 # download latest speedtest-cli from github
-curl -Lo speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+curl -sLo speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
 
 # set execute permissions
 chmod +x speedtest-cli
