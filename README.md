@@ -10,3 +10,7 @@ curl -Lo update_speedtest.sh https://raw.githubusercontent.com/dbrosy/scripts/ma
 chmod +x update_speedtest.sh
 ./update_speedtest.sh
 ```
+#### Run Speedtest-cli
+```bash
+speedtest-cli
+```
