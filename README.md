@@ -1,6 +1,10 @@
 # scripts
 Ubiquiti Utilities
 
+```bash
 sudo bash
+```
 
-1. speedtest_cli.sh
+  ```bash
+  curl -O https://raw.githubusercontent.com/dbrosy/scripts/master/update_speedtest.sh
+  ```
