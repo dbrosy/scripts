@@ -15,3 +15,6 @@ exit
 ```bash
 speedtest-cli
 ```
+
+#### install Docker + Docker-Compose
+$ curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/docker-installer.sh > /tmp/docker_installer.sh && sudo bash /tmp/docker_installer.sh
