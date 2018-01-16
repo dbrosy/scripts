@@ -6,6 +6,7 @@ set -e
 # echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 
 # Add Ubiquiti stable repository
+sudo add-apt-repository "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti"
 sudo add-apt-repository "deb http://www.ubnt.com/downloads/unifi/debian testing ubiquiti"
 
 # Add Ubiquiti testing repository
