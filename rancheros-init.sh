@@ -7,13 +7,13 @@ if blkid | grep RANCHER_STATE; then
 	echo "DONE"
 	exit
 else
-  echo "RancherOS not found"
+  echo "[RancherOS] Install Proceeding"
 fi
 
 INSTALL_DISK="/dev/vda"
-if ! fdisk -l $INSTALL_DISK; then
+if ! fdisk -l $INSTALL_DISK > /dev/null 2>&1; then
 	INSTALL_DISK="/dev/sda"
-  echo "RancherOS Installdisk - /dev/sda"
+  echo "[RancherOS] Installdisk - /dev/sda"
 else
-  echo "RancherOS Installdisk - /dev/vda"
+  echo "[RancherOS] Installdisk - /dev/vda"
 fi
