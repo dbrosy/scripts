@@ -15,4 +15,3 @@ if ! fdisk -l $INSTALL_DISK; then
 else
   echo "RancherOS Installdisk - /dev/vda"
 fi
-
