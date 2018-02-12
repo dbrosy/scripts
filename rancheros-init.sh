@@ -20,8 +20,8 @@ fi
 
 
 
-V4_PRIVATE_IP='wget -q -O - http://169.254.169.254/current/meta-data/local-ipv4'
-HOSTNAME='wget -q -O - http://169.254.169.254/current/meta-data/hostname'
+# V4_PRIVATE_IP='wget -q -O - http://169.254.169.254/current/meta-data/local-ipv4'
+# HOSTNAME='wget -q -O - http://169.254.169.254/current/meta-data/hostname'
 
 #if ! $V4_PRIVATE; then
   V4_PRIVATE='10.49.0.21'
