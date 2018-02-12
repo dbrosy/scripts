@@ -9,7 +9,7 @@ else
 fi
 
 INSTALL_DISK="/dev/vda"
-if ! sudo fdisk -l $INSTALL_DISK /dev/null 2/&1; then
+if ! fdisk -l $INSTALL_DISK /dev/null 2/&1; then
 	INSTALL_DISK="/dev/sda"
   echo "RancherOS Installdisk - /dev/sda"
 else
