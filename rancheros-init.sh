@@ -1,5 +1,7 @@
 #!/bin/bash
 
+clear
+
 if blkid | grep RANCHER_STATE; then
 	# don't re-format
 	echo "DONE"
