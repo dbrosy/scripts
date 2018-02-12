@@ -1,5 +1,4 @@
-#!/bin/bash #ex
-#exec &>> /var/log/install.log
+#!/bin/bash
 
 if blkid | grep RANCHER_STATE; then
 	# don't re-format
