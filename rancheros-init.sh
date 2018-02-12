@@ -19,19 +19,21 @@ else
 fi
 
 
+
 V4_PRIVATE_IP='wget -q -O - http://169.254.169.254/current/meta-data/local-ipv4'
 HOSTNAME='wget -q -O - http://169.254.169.254/current/meta-data/hostname'
 
-if ! $V4_PRIVATE; then
+#if ! $V4_PRIVATE; then
   V4_PRIVATE='10.49.0.21'
-fi
+#fi
 
-if ! $HOSTNAME; then
+#if ! $HOSTNAME; then
   HOSTNAME='ipxe-ros-r1'
-fi
+#fi
 
-cat > "cloud-config.yaml" <<EOF
-#cloud-config
+(
+cat <<EOF
+#cloud-init
 hostname: $HOSTNAME
 ssh_authorized_keys:
   - ssh-rsa ...
@@ -65,3 +67,4 @@ rancher:
    autoformat:
      - /dev/vda
 EOF
+) > cloud-init.yml
