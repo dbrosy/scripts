@@ -2,7 +2,7 @@
 
 clear
 
-COMPOSE_VERSION=1.17.0
+COMPOSE_VERSION=1.22.0
 
 if [ "$USER" != "ubuntu" ]; then
   echo "Please run as ubuntu"
