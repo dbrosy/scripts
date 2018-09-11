@@ -18,5 +18,5 @@ speedtest-cli
 
 #### install Docker + Docker-Compose
 ```
-curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/install-docker.sh > /tmp/install-docker.sh && bash /tmp/docker_installer.sh
+curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/install-docker.sh > /tmp/install-docker.sh && bash /tmp/install-docker.sh
 ```
