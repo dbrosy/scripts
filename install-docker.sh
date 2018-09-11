@@ -39,9 +39,6 @@ else
   echo "Installer: Install latest stable version of Docker CE"
   sudo apt-get install docker-ce -y
 
-  echo "Installer: add docker user to group"
-  # sudo groupadd docker
-
   echo "Installer: add current user to docker group"
   sudo usermod -aG docker $USER
 
