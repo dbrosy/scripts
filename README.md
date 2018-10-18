@@ -8,7 +8,7 @@ sudo bash
 ```bash
 curl -sLo update_speedtest.sh https://raw.githubusercontent.com/dbrosy/scripts/master/update_speedtest.sh
 chmod +x update_speedtest.sh
-./update_speedtest.sh
+sudo ./update_speedtest.sh
 exit
 ```
 #### Run Speedtest-cli
