@@ -5,7 +5,7 @@ set -o pipefail
 
 clear
 
-# COMPOSE_VERSION=1.22.0
+# COMPOSE_VERSION=1.23.2
 
 if [ "$USER" != "ubuntu" ]; then
   echo "Please run as ubuntu"
