@@ -18,7 +18,9 @@ speedtest-cli
 
 #### Configure sudo user - ubuntu
 ```
+
 curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/ubuntu-server-sudo.sh > /tmp/ubuntu-server-sudo.sh && sudo bash /tmp/ubuntu-server-sudo.sh
+
 ```
 
 #### install Docker + Docker-Compose
