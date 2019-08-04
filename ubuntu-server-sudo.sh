@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Check if running as root
+if [[ $(id -u) -ne 0 ]] ; then
+  echo "Please run as root";
+  exit 1;
+fi
+
 # input might contains spaces and other characters
 FILEPATH="/etc/sudoers.d/100-ubuntu"
 
