@@ -18,10 +18,11 @@ else
   sudo apt-get update
 
   echo "Installer: Pre-requisites for repository over https"
-  sudo apt-get install -y \
+sudo apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
+    gnupg-agent \
     software-properties-common
 
   echo "Installer: Add Docker’s official GPG key"
