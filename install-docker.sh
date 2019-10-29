@@ -18,7 +18,7 @@ else
   sudo apt-get update
 
   echo "Installer: Pre-requisites for repository over https"
-sudo apt-get install \
+sudo apt-get -y install \
     apt-transport-https \
     ca-certificates \
     curl \
