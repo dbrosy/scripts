@@ -41,6 +41,13 @@ sudo apt-get -y install \
   sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
   echo "Installer: add current user to docker group"
+  if grep -q docker /etc/group
+    then
+         echo "group exists - skipping"
+    else
+         sudo groupadd docker
+    fi
+  
   sudo usermod -aG docker $USER
 
   echo "Installer: Installing Docker-Compose"
