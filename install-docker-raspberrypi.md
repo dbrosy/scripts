@@ -14,7 +14,7 @@ sudo pip install docker-compose
 #### Updating Docker
 ```sh
 sudo /etc/init.d/docker stop
-curl -sL get.docker.com|sh
+curl -sSL https://get.docker.com | sh
 ```
 
 #### Updating Docker-Compose
