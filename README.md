@@ -40,3 +40,8 @@ systemctl status haveged.service
 cat /proc/sys/kernel/random/entropy_avail
 # 2400 or more
 ```
+
+##### Tracing docker
+```sh
+strace -c docker-compose --version
+```
