@@ -34,7 +34,7 @@ curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/install-docke
 cat /proc/sys/kernel/random/entropy_avail
 # around 5
 
-apt install -y haveged
+sudo apt install -y haveged
 systemctl status haveged.service
 
 cat /proc/sys/kernel/random/entropy_avail
