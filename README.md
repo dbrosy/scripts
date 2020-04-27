@@ -25,6 +25,12 @@ curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/ubuntu-server
 
 #### install Docker + Docker-Compose
 ```sh
+sudo apt install docker.io
+sudo apt install docker-compose
+```
+or
+
+```sh
 curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/install-docker.sh > /tmp/install-docker.sh && bash /tmp/install-docker.sh
 ```
 ##### Note - if docker-compose hangs
