@@ -26,6 +26,9 @@ curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/ubuntu-server
 #### install Docker + Docker-Compose
 ```sh
 sudo apt install docker.io
+sudo systemctl enable --now docker
+sudo usermod -aG docker $USER
+
 sudo apt install docker-compose
 ```
 or
