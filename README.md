@@ -25,11 +25,13 @@ curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/ubuntu-server
 
 #### Configure timezone >= Ubuntu 18.04
 
+:new_zealand:
 _Auckland_
 ```sh,
 sudo timedatectl set-timezone 'Pacific/Auckland'
 ```
 
+:australia:
 _Sydney_
 ```sh
 sudo timedatectl set-timezone 'Australia/Sydney'
