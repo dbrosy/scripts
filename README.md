@@ -23,6 +23,18 @@ curl -fsSL https://raw.githubusercontent.com/dbrosy/scripts/master/ubuntu-server
 
 ```
 
+#### Configure timezone >= Ubuntu 18.04
+```sh,
+Auckland
+sudo timedatectl set-timezone 'Pacific/Auckland'
+
+Sydney
+sudo timedatectl set-timezone 'Australia/Sydney'
+
+
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+```
+
 #### install Docker + Docker-Compose
 ```sh
 sudo apt install docker.io
