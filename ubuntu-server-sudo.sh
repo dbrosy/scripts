@@ -16,6 +16,6 @@ DIR="`dirname "${FILEPATH}"`"
 
 # create the dir, then the file
 mkdir -p "${DIR}" && touch "${DIR}/${FILE}"
-echo -e "$USER ALL=(ALL) NOPASSWD:ALL" > "${DIR}/${FILE}"
+echo -e "$SUDO_USER ALL=(ALL) NOPASSWD:ALL" > "${DIR}/${FILE}"
 # show result
 ls -l "$FILEPATH"
